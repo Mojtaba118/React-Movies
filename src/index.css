@@ -1,0 +1,66 @@
+.moviesContainer {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+.movieContainer {
+  min-width: 280px;
+  max-width: 280px;
+  height: auto;
+  margin-top: 10px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px #aaa solid;
+  transition: transform 0.2s linear;
+  margin-right: 10px;
+}
+
+.movieContainer:hover {
+  transform: translateY(-5px);
+}
+
+.movieImage {
+  width: 280px;
+  height: 420px;
+}
+
+.movieBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100% - 420px);
+}
+
+.movieTitle {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  word-wrap: break-word;
+  margin: 5px;
+}
+
+.movieButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 5px 5px;
+}
+
+.fa-heart,
+.fa-trash-alt {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.fa-trash-alt {
+  color: #f44336;
+}
+
+.search {
+  width: 20%;
+  transition: width 0.5s ease;
+}
+.search:focus {
+  width: 30%;
+}
